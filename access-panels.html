@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.png" />
+    <title>Access Panels List | Shark Traders</title>
+    <!-- Bootstrap 4.1.3-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- Bootstrap-extend -->
+    <link rel="stylesheet" href="assets/css/bootstrap-extend.css" />
+    <link rel="stylesheet" href="assets/css/dashlite.css" />
+    <!-- theme style -->
+    <link rel="stylesheet" href="assets/css/master_style.css" />
+    <!-- Custom style -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <!--dark-mode-->
+  <body
+    class="nk-body bg-lighter npc-general has-sidebar admin-body no-touch nk-nio-theme">
+    <div class="nk-app-root">
+      <!-- main @s -->
+      <div class="nk-main">
+        <!-- sidebar @s -->
+        <div
+          class="nk-sidebar nk-sidebar-fixed is-light"
+          data-content="sidebarMenu">
+          <div class="nk-sidebar-element nk-sidebar-head">
+            <div class="nk-sidebar-brand">
+              <a href="index.html" class="logo-link nk-sidebar-logo">
+                <img
+                  class="logo-dark logo-img"
+                  src="assets/images/logo.png"
+                  alt="logo-dark" />
+              </a>
+            </div>
+            <div class="nk-menu-trigger mr-n2">
+              <a
+                href="javascript:void(0)"
+                class="nk-nav-toggle nk-quick-nav-icon d-xl-none"
+                data-target="sidebarMenu">
+                <em class="icon ni ni-arrow-left"></em>
+              </a>
+            </div>
+          </div>
+          <!-- .nk-sidebar-element -->
+          <div class="nk-sidebar-element nk-sidebar-body">
+            <div class="nk-sidebar-content">
+              <div class="nk-sidebar-menu" data-simplebar="init">
+                <div class="simplebar-wrapper">
+                  <div class="simplebar-height-auto-observer-wrapper">
+                    <div class="simplebar-height-auto-observer"></div>
+                  </div>
+                  <div class="simplebar-mask">
+                    <div class="simplebar-offset">
+                      <div
+                        class="simplebar-content-wrapper"
+                        tabindex="0"
+                        role="region"
+                        aria-label="scrollable content">
+                        <div
+                          class="simplebar-content"
+                          style="padding: 40px 0px 24px">
+                          <!-- Sidebar user panel -->
+                          <!-- sidebar menu -->
+                          <ul class="nk-menu tree" data-widget="tree">
+                            <li class="nk-menu-item active current-page">
+                              <a
+                                class="nk-menu-link"
+                                href="index.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-dashboard"></em>
+                                </span>
+                                <span>Dashboard</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="users.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-user-alt"></em>
+                                </span>
+                                <span>Users</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-chart-down"></em>
+                                </span>
+                                <span>All Trades</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="live-trades.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Live Trades</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="demo-trades.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Demo Trades</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="fetch-update.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Fetch n Update</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="account-syncronize.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Accounts Syncronization</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-network"></em>
+                                </span>
+                                <span>Groups</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="all-groups.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Groups</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-thumb-alt"></em>
+                                </span>
+                                <span>Manage IB Requests</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-partners.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Partners</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-requests.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Requests</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-index-fill"></em>
+                                </span>
+                                <span>Manage Subadmins</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="subadmins.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Subadmins List</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="add-subadmin.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Add Subadmin</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="add-admin-role.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Add Admin Role</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="access-panels.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Access Panels</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="role-access.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Role Access</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-index-fill"></em>
+                                </span>
+                                <span>Manage Transactions</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="bfic-deposits.html"
+                                    data-original-title=""
+                                    title=""
+                                    >BFIC Deposits</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="fiat-deposits.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Deposits</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="withdraw.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Withdraw</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-commissions.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Commission</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="lot-wise.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Lot Wise Commission</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="meta-deposits.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Terminal Deposits</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="rest-ib-commission.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Pending Commissions</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-index-fill"></em>
+                                </span>
+                                <span>All Reports</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="deposit-bfic.html"
+                                    data-original-title=""
+                                    title=""
+                                    >BFIC Deposits Reports</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="fiat-deposit.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Deposit Reports</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="withdraw-report.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Withdrawals</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="internal-transfer.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Internal Transfer</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="live.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Live Accounts</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="demo.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Demo Accounts</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="wallet-report.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Wallet Transactions Report</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="kyc-submitted-users.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-file-docs"></em>
+                                </span>
+                                <span>KYC Requests</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-setting-alt"></em>
+                                </span>
+                                <span>Site Settings</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="company-banks.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Company Bank List</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="leverage-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Leverage Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="logo-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Logo Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="seo-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >SEO Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="currency-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Currency Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="account-types.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Account Type Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="account-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Account Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="agreement-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Agreement Settings</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-setting-alt"></em>
+                                </span>
+                                <span>Trade Symbol Settings</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="trades-categories.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Trades Categories</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="symbol-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Trades Symbols</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="tickets.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-ticket"></em>
+                                </span>
+                                <span>Tickets</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="general-settings.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-account-setting"></em>
+                                </span>
+                                <span>General Settings</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--nk-sidebar-->
+        <!-- sidebar @e -->
+        <!-- wrap @s -->
+        <div class="nk-wrap">
+          <!-- main header @s -->
+          <div class="nk-header nk-header-fixed is-light">
+            <div class="container-fluid">
+              <div class="nk-header-wrap">
+                <div class="nk-menu-trigger d-xl-none ml-n1">
+                  <a
+                    href="javascript:void(0)"
+                    class="nk-nav-toggle nk-quick-nav-icon"
+                    data-target="sidebarMenu">
+                    <em class="icon ni ni-menu"></em>
+                  </a>
+                </div>
+                <div class="nk-header-brand d-xl-none">
+                  <a href="javascript:void(0)" class="logo-link">
+                    <img
+                      class="logo-dark logo-img"
+                      src="assets/images/favicon.png"
+                      alt="logo-dark" />
+                  </a>
+                </div>
+                <!-- .nk-header-brand -->
+                <div class="nk-header-news d-none d-xl-block">
+                  <div class="nk-news-list">
+                    <a class="nk-news-item" href="javascript:void(0)">
+                      <div class="nk-news-icon">
+                        <em class="icon ni ni-happy"></em>
+                      </div>
+                      <div class="nk-news-text">
+                        <p>mike</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- .nk-header-news -->
+                <div class="nk-header-tools">
+                  <ul class="nk-quick-nav">
+                    <li class="dropdown notification-dropdown">
+                      <a
+                        href="javascript:void(0);"
+                        onclick="readNotification();"
+                        class="dropdown-toggle nk-quick-nav-icon"
+                        data-toggle="dropdown">
+                        <div class="" id="newNotiBell">
+                          <em class="icon ni ni-bell"></em>
+                        </div>
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+                        <div class="dropdown-head">
+                          <span class="sub-title nk-dropdown-title"
+                            >Notifications</span
+                          >
+                          <!-- <a href="#">Mark All as Read</a> -->
+                        </div>
+                        <div class="dropdown-body">
+                          <div class="nk-notification" id="notificationPanel">
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a withdraw request of 100 USD,
+                                    Please check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  27 Nov, 2024 6:28:08 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a new KYC request, Please
+                                    check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  27 Nov, 2024 6:08:01 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a new KYC request, Please
+                                    check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  27 Nov, 2024 6:06:59 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a withdraw request of 100 USD,
+                                    on address ...225452 Please check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  4 Jul, 2024 5:32:14 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a new KYC request, Please
+                                    check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  3 Jul, 2024 10:37:52 am
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- .nk-notification -->
+                        </div>
+                        <!-- .nk-dropdown-body -->
+                        <div class="dropdown-foot center">
+                          <a href="javascript:void(0)">View All</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="btn btn-md btn-light">
+                        Logout</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- .nk-header-tools -->
+              </div>
+              <!-- .nk-header-wrap -->
+            </div>
+            <!-- .container-fliud -->
+          </div>
+          <!-- content @s -->
+          <div class="nk-content">
+            <div class="container-fluid">
+              <div class="nk-content-inner">
+                <div class="nk-content-body">
+                  <div class="nk-block-head nk-block-head-sm">
+                    <div class="nk-block-between">
+                      <div class="nk-block-head-content">
+                        <h3 class="nk-block-title page-title">
+                          Access Panels List
+                        </h3>
+                      </div>
+                      <!-- nk-block-head-content -->
+                    </div>
+                    <!-- nk-block-between -->
+                  </div>
+                  <!-- nk-block-head -->
+                  <div class="nk-block">
+                    <div class="row g-gs">
+                      <div class="col-md-12">
+                        <div class="card card-bordered mb-3">
+                          <div class="card-inner-group">
+                            <div class="card-inner">
+                              <form
+                                class="form-element"
+                                name="adminForm"
+                                id="adminForm"
+                                method="post"
+                                accept-charset="utf-8">
+                                <input
+                                  type="hidden"
+                                  name="access_id"
+                                  value="" />
+                                <div class="row mt-3 mb-3">
+                                  <div class="col-md-3">
+                                    <div class="form-group">
+                                      <!-- <label for="name">Panel Name</label> -->
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="name"
+                                        id="name"
+                                        placeholder="Enter Role Name"
+                                        value="" />
+                                      <span class="err"></span>
+                                    </div>
+                                    <!--form-control-select-->
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="form-group">
+                                      <!-- <label for="controller">Controller</label> -->
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="controller"
+                                        id="controller"
+                                        placeholder="Controller"
+                                        value="" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <div class="form-group">
+                                      <!-- <label for="action">Action</label> -->
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="action"
+                                        id="action"
+                                        placeholder="Action"
+                                        value="" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-3">
+                                    <button
+                                      type="submit"
+                                      class="btn btn-primary"
+                                      id="saveBtn">
+                                      Save
+                                    </button>
+                                  </div>
+                                </div>
+                              </form>
+                              <hr class="mb-4" />
+                              <div class="">
+                                <div
+                                  id="example1_wrapper"
+                                  class="dataTables_wrapper form-inline dt-bootstrap">
+                                  <div
+                                    class="dataTables_length"
+                                    id="example1_length">
+                                    <label
+                                      >Show
+                                      <select
+                                        name="example1_length"
+                                        aria-controls="example1"
+                                        class="form-control input-sm">
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="200">200</option>
+                                        <option value="-1">All</option>
+                                      </select>
+                                      entries</label
+                                    >
+                                  </div>
+                                  <div class="dt-buttons">
+                                    <a
+                                      class="dt-button buttons-copy buttons-html5"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>Copy</span></a
+                                    ><a
+                                      class="dt-button buttons-csv buttons-html5"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>CSV</span></a
+                                    ><a
+                                      class="dt-button buttons-excel buttons-html5"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>Excel</span></a
+                                    ><a
+                                      class="dt-button buttons-pdf buttons-html5"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>PDF</span></a
+                                    ><a
+                                      class="dt-button buttons-print"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>Print</span></a
+                                    >
+                                  </div>
+                                  <div
+                                    id="example1_filter"
+                                    class="dataTables_filter">
+                                    <label
+                                      >Search:<input
+                                        type="search"
+                                        class="form-control input-sm"
+                                        placeholder=""
+                                        aria-controls="example1"
+                                    /></label>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table
+                                      id="example1"
+                                      class="w-100 table table-bordered table-striped dataTable table-sm admintb"
+                                      role="grid"
+                                      aria-describedby="example1_info"
+                                      style="width: 583px">
+                                      <thead>
+                                        <tr role="row">
+                                          <th
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1"
+                                            style="width: 11px">
+                                            #
+                                          </th>
+                                          <th
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1"
+                                            style="width: 142px">
+                                            Name
+                                          </th>
+                                          <th
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1"
+                                            style="width: 72px">
+                                            Controllers
+                                          </th>
+                                          <th
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1"
+                                            style="width: 111px">
+                                            Action
+                                          </th>
+                                          <th
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1"
+                                            style="width: 53px">
+                                            Operation
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr role="row" class="odd">
+                                          <td>1</td>
+                                          <td class="leadclass">
+                                            Account Settings
+                                          </td>
+                                          <td>settings</td>
+                                          <td>account-settings</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="20"
+                                              data-name="Account Settings    "
+                                              data-controller="settings"
+                                              data-action="account-settings"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>2</td>
+                                          <td class="leadclass">
+                                            Account Syncronization
+                                          </td>
+                                          <td>transactions</td>
+                                          <td>account-syncronize</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="28"
+                                              data-name="Account Syncronization"
+                                              data-controller="transactions"
+                                              data-action="account-syncronize"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>3</td>
+                                          <td class="leadclass">Add Region</td>
+                                          <td>regions</td>
+                                          <td>add-region</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="33"
+                                              data-name="Add Region"
+                                              data-controller="regions"
+                                              data-action="add-region"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>4</td>
+                                          <td class="leadclass">
+                                            Add Sub Region
+                                          </td>
+                                          <td>regions</td>
+                                          <td>add-sub-region</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="34"
+                                              data-name="Add Sub Region"
+                                              data-controller="regions"
+                                              data-action="add-sub-region"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>5</td>
+                                          <td class="leadclass">
+                                            Add Subadmin
+                                          </td>
+                                          <td>subadmins</td>
+                                          <td>add-subadmin</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="13"
+                                              data-name="Add Subadmin"
+                                              data-controller="subadmins"
+                                              data-action="add-subadmin"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>6</td>
+                                          <td class="leadclass">Admin Role</td>
+                                          <td>subadmins</td>
+                                          <td>add-admin-role</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="14"
+                                              data-name="Admin Role"
+                                              data-controller="subadmins"
+                                              data-action="add-admin-role"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>7</td>
+                                          <td class="leadclass">
+                                            Agreement Settings
+                                          </td>
+                                          <td>settings</td>
+                                          <td>agreement-settings</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="45"
+                                              data-name="Agreement Settings"
+                                              data-controller="settings"
+                                              data-action="agreement-settings"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>8</td>
+                                          <td class="leadclass">All Groups</td>
+                                          <td>leads</td>
+                                          <td>all-groups</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="29"
+                                              data-name="All Groups"
+                                              data-controller="leads"
+                                              data-action="all-groups"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>9</td>
+                                          <td class="leadclass">
+                                            All Withdrawal Report
+                                          </td>
+                                          <td>reports</td>
+                                          <td>withdraw-report</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="23"
+                                              data-name="All Withdrawal Report"
+                                              data-controller="reports"
+                                              data-action="withdraw-report"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>10</td>
+                                          <td class="leadclass">Client Type</td>
+                                          <td>users</td>
+                                          <td>save-client</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="25"
+                                              data-name="Client Type"
+                                              data-controller="users"
+                                              data-action="save-client"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>11</td>
+                                          <td class="leadclass">
+                                            Company Bank List
+                                          </td>
+                                          <td>settings</td>
+                                          <td>company-banks</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="43"
+                                              data-name="Company Bank List"
+                                              data-controller="settings"
+                                              data-action="company-banks"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>12</td>
+                                          <td class="leadclass">Contact us</td>
+                                          <td>dashboard</td>
+                                          <td>contactus-messages</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="10"
+                                              data-name="Contact us"
+                                              data-controller="dashboard"
+                                              data-action="contactus-messages"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>13</td>
+                                          <td class="leadclass">
+                                            Currency Settings
+                                          </td>
+                                          <td>settings</td>
+                                          <td>currency-settings</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="18"
+                                              data-name="Currency Settings"
+                                              data-controller="settings"
+                                              data-action="currency-settings"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>14</td>
+                                          <td class="leadclass">
+                                            Demo Account
+                                          </td>
+                                          <td>reports</td>
+                                          <td>demo-account</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="40"
+                                              data-name="Demo Account"
+                                              data-controller="reports"
+                                              data-action="demo-account"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>15</td>
+                                          <td class="leadclass">
+                                            Demo Requests
+                                          </td>
+                                          <td>dashboard</td>
+                                          <td>demo-requests</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="48"
+                                              data-name="Demo Requests"
+                                              data-controller="dashboard"
+                                              data-action="demo-requests"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>16</td>
+                                          <td class="leadclass">Demo Trades</td>
+                                          <td>transactions</td>
+                                          <td>demo-trades</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="3"
+                                              data-name="Demo Trades"
+                                              data-controller="transactions"
+                                              data-action="demo-trades"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>17</td>
+                                          <td class="leadclass">Deposits</td>
+                                          <td>transactions</td>
+                                          <td>deposits</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="6"
+                                              data-name="Deposits"
+                                              data-controller="transactions"
+                                              data-action="deposits"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>18</td>
+                                          <td class="leadclass">
+                                            Fetch n Update
+                                          </td>
+                                          <td>transactions</td>
+                                          <td>fetch-update</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="27"
+                                              data-name="Fetch n Update"
+                                              data-controller="transactions"
+                                              data-action="fetch-update"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>19</td>
+                                          <td class="leadclass">
+                                            Fiat Deposits
+                                          </td>
+                                          <td>transactions</td>
+                                          <td>fiat-deposits</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="35"
+                                              data-name="Fiat Deposits"
+                                              data-controller="transactions"
+                                              data-action="fiat-deposits"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>20</td>
+                                          <td class="leadclass">
+                                            General Settings
+                                          </td>
+                                          <td>settings</td>
+                                          <td>general-settings</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="12"
+                                              data-name="General Settings"
+                                              data-controller="settings"
+                                              data-action="general-settings"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>21</td>
+                                          <td class="leadclass">
+                                            IB Commissions
+                                          </td>
+                                          <td>transactions</td>
+                                          <td>ib-commissions</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="36"
+                                              data-name="IB Commissions"
+                                              data-controller="transactions"
+                                              data-action="ib-commissions"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>22</td>
+                                          <td class="leadclass">IB Partners</td>
+                                          <td>dashboard</td>
+                                          <td>ib-partners</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="30"
+                                              data-name="IB Partners"
+                                              data-controller="dashboard"
+                                              data-action="ib-partners"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>23</td>
+                                          <td class="leadclass">INR Report</td>
+                                          <td>reports</td>
+                                          <td>fiat-deposit</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="22"
+                                              data-name="INR Report"
+                                              data-controller="reports"
+                                              data-action="fiat-deposit"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>24</td>
+                                          <td class="leadclass">
+                                            Internal Transfer
+                                          </td>
+                                          <td>reports</td>
+                                          <td>internal-transfer</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="24"
+                                              data-name="Internal Transfer"
+                                              data-controller="reports"
+                                              data-action="internal-transfer"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>25</td>
+                                          <td class="leadclass">
+                                            Leverage Settings
+                                          </td>
+                                          <td>settings</td>
+                                          <td>leverage-settings</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="44"
+                                              data-name="Leverage Settings"
+                                              data-controller="settings"
+                                              data-action="leverage-settings"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>26</td>
+                                          <td class="leadclass">
+                                            Live Account Report
+                                          </td>
+                                          <td>reports</td>
+                                          <td>live-account-report</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="41"
+                                              data-name="Live Account Report"
+                                              data-controller="reports"
+                                              data-action="live-account-report"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>27</td>
+                                          <td class="leadclass">Live Trades</td>
+                                          <td>transactions</td>
+                                          <td>live-trades</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="2"
+                                              data-name="Live Trades"
+                                              data-controller="transactions"
+                                              data-action="live-trades"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>28</td>
+                                          <td class="leadclass">
+                                            Lot Wise Commission
+                                          </td>
+                                          <td>transactions</td>
+                                          <td>lot-wise</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="37"
+                                              data-name="Lot Wise Commission"
+                                              data-controller="transactions"
+                                              data-action="lot-wise"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>29</td>
+                                          <td class="leadclass">
+                                            Manage Access Panel
+                                          </td>
+                                          <td>subadmins</td>
+                                          <td>access-panels</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="15"
+                                              data-name="Manage Access Panel"
+                                              data-controller="subadmins"
+                                              data-action="access-panels"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>30</td>
+                                          <td class="leadclass">
+                                            Manage Account Type
+                                          </td>
+                                          <td>settings</td>
+                                          <td>account-types</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="19"
+                                              data-name="Manage Account Type"
+                                              data-controller="settings"
+                                              data-action="account-types"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>31</td>
+                                          <td class="leadclass">
+                                            Manage IB Request
+                                          </td>
+                                          <td>dashboard</td>
+                                          <td>ib-requests</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="4"
+                                              data-name="Manage IB Request"
+                                              data-controller="dashboard"
+                                              data-action="ib-requests"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>32</td>
+                                          <td class="leadclass">
+                                            Manage KYC Requests
+                                          </td>
+                                          <td>users</td>
+                                          <td>kyc-submitted-users</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="7"
+                                              data-name="Manage KYC Requests"
+                                              data-controller="users"
+                                              data-action="kyc-submitted-users"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>33</td>
+                                          <td class="leadclass">
+                                            Manage Subadmins
+                                          </td>
+                                          <td>subadmins</td>
+                                          <td>subadmins</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="5"
+                                              data-name="Manage Subadmins"
+                                              data-controller="subadmins"
+                                              data-action="subadmins"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>34</td>
+                                          <td class="leadclass">
+                                            Manage Support Tickets
+                                          </td>
+                                          <td>tickets</td>
+                                          <td>tickets</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="11"
+                                              data-name="Manage Support Tickets"
+                                              data-controller="tickets"
+                                              data-action="tickets"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>35</td>
+                                          <td class="leadclass">
+                                            Meta Deposits
+                                          </td>
+                                          <td>transactions</td>
+                                          <td>meta-deposits</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="38"
+                                              data-name="Meta Deposits"
+                                              data-controller="transactions"
+                                              data-action="meta-deposits"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>36</td>
+                                          <td class="leadclass">
+                                            Pending Commissions
+                                          </td>
+                                          <td>transactions</td>
+                                          <td>rest-ib-commission</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="39"
+                                              data-name="Pending Commissions"
+                                              data-controller="transactions"
+                                              data-action="rest-ib-commission"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>37</td>
+                                          <td class="leadclass">
+                                            Role Access Change
+                                          </td>
+                                          <td>subadmins</td>
+                                          <td>role-access</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="16"
+                                              data-name="Role Access Change"
+                                              data-controller="subadmins"
+                                              data-action="role-access"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>38</td>
+                                          <td class="leadclass">Send Email</td>
+                                          <td>settings</td>
+                                          <td>send-email</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="42"
+                                              data-name="Send Email"
+                                              data-controller="settings"
+                                              data-action="send-email"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>39</td>
+                                          <td class="leadclass">
+                                            SEO Settings
+                                          </td>
+                                          <td>settings</td>
+                                          <td>seo-settings</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="17"
+                                              data-name="SEO Settings"
+                                              data-controller="settings"
+                                              data-action="seo-settings"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>40</td>
+                                          <td class="leadclass">Settings</td>
+                                          <td>settings</td>
+                                          <td>logo-settings</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="9"
+                                              data-name="Settings"
+                                              data-controller="settings"
+                                              data-action="logo-settings"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>41</td>
+                                          <td class="leadclass">
+                                            Symbol Settings
+                                          </td>
+                                          <td>settings</td>
+                                          <td>symbol-settings</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="47"
+                                              data-name="Symbol Settings"
+                                              data-controller="settings"
+                                              data-action="symbol-settings"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>42</td>
+                                          <td class="leadclass">
+                                            Trades Categories
+                                          </td>
+                                          <td>settings</td>
+                                          <td>trades-categories</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="46"
+                                              data-name="Trades Categories"
+                                              data-controller="settings"
+                                              data-action="trades-categories"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>43</td>
+                                          <td class="leadclass">
+                                            Unsend Trades
+                                          </td>
+                                          <td>transactions</td>
+                                          <td>unsend-trades</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="26"
+                                              data-name="Unsend Trades"
+                                              data-controller="transactions"
+                                              data-action="unsend-trades"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>44</td>
+                                          <td class="leadclass">USDT Report</td>
+                                          <td>reports</td>
+                                          <td>crypto-deposit</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="21"
+                                              data-name="USDT Report"
+                                              data-controller="reports"
+                                              data-action="crypto-deposit"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>45</td>
+                                          <td class="leadclass">User List</td>
+                                          <td>users</td>
+                                          <td>users</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="1"
+                                              data-name="User List"
+                                              data-controller="users"
+                                              data-action="users"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>46</td>
+                                          <td class="leadclass">White Label</td>
+                                          <td>dashboard</td>
+                                          <td>white-label</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="49"
+                                              data-name="White Label"
+                                              data-controller="dashboard"
+                                              data-action="white-label"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>47</td>
+                                          <td class="leadclass">Withdraw</td>
+                                          <td>transactions</td>
+                                          <td>withdraw</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              data-id="8"
+                                              data-name="Withdraw"
+                                              data-controller="transactions"
+                                              data-action="withdraw"
+                                              onclick="editAccess(this);"
+                                              class="edit-user"
+                                              ><i
+                                                class="ni ni-edit-fill"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr>
+                                          <th rowspan="1" colspan="1">#</th>
+                                          <th rowspan="1" colspan="1">Name</th>
+                                          <th rowspan="1" colspan="1">
+                                            Controllers
+                                          </th>
+                                          <th rowspan="1" colspan="1">
+                                            Action
+                                          </th>
+                                          <th rowspan="1" colspan="1">
+                                            Operation
+                                          </th>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                  <div
+                                    id="example1_processing"
+                                    class="dataTables_processing panel panel-default"
+                                    style="display: none">
+                                    Processing...
+                                  </div>
+                                  <div
+                                    class="dataTables_info"
+                                    id="example1_info"
+                                    role="status"
+                                    aria-live="polite">
+                                    Showing 1 to 47 of 47 entries
+                                  </div>
+                                  <div
+                                    class="dataTables_paginate paging_simple_numbers"
+                                    id="example1_paginate">
+                                    <ul class="pagination">
+                                      <li
+                                        class="paginate_button previous disabled"
+                                        id="example1_previous">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="0"
+                                          tabindex="0"
+                                          >Previous</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button active">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="1"
+                                          tabindex="0"
+                                          >1</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="paginate_button next disabled"
+                                        id="example1_next">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="2"
+                                          tabindex="0"
+                                          >Next</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--table-responsive-->
+                            </div>
+                            <!--card-inner-->
+                            <!--card-inner-->
+                          </div>
+                          <!--card-inner-group-->
+                        </div>
+                        <!--card-->
+                      </div>
+                      <!--col-md-12-->
+                    </div>
+                    <!--row g-gs-->
+                  </div>
+                  <!--nk-block-->
+                </div>
+                <!--nk-content-body-->
+              </div>
+              <!--nk-content-inner-->
+            </div>
+            <!--container-fluid-->
+          </div>
+          <!--nk-content-->
+          <!-- footer @s -->
+          <div class="nk-footer">
+            <div class="container-fluid">
+              <div class="nk-footer-wrap">
+                <div class="nk-footer-copyright">
+                  © 2025 Shark Traders. All Rights Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer @e -->
+        </div>
+        <!-- wrap @e -->
+      </div>
+      <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Bootstrap 4.1.3-->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

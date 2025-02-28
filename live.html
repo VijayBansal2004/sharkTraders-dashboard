@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.png" />
+    <title>Live Accounts | Shark Traders</title>
+    <!-- Bootstrap 4.1.3-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- Bootstrap-extend -->
+    <link rel="stylesheet" href="assets/css/bootstrap-extend.css" />
+    <link rel="stylesheet" href="assets/css/dashlite.css" />
+    <!-- theme style -->
+    <link rel="stylesheet" href="assets/css/master_style.css" />
+    <!-- Custom style -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <!--dark-mode-->
+  <body
+    class="nk-body bg-lighter npc-general has-sidebar admin-body no-touch nk-nio-theme">
+    <div class="nk-app-root">
+      <!-- main @s -->
+      <div class="nk-main">
+        <!-- sidebar @s -->
+        <div
+          class="nk-sidebar nk-sidebar-fixed is-light"
+          data-content="sidebarMenu">
+          <div class="nk-sidebar-element nk-sidebar-head">
+            <div class="nk-sidebar-brand">
+              <a href="index.html" class="logo-link nk-sidebar-logo">
+                <img
+                  class="logo-dark logo-img"
+                  src="assets/images/logo.png"
+                  alt="logo-dark" />
+              </a>
+            </div>
+            <div class="nk-menu-trigger mr-n2">
+              <a
+                href="javascript:void(0)"
+                class="nk-nav-toggle nk-quick-nav-icon d-xl-none"
+                data-target="sidebarMenu">
+                <em class="icon ni ni-arrow-left"></em>
+              </a>
+            </div>
+          </div>
+          <!-- .nk-sidebar-element -->
+          <div class="nk-sidebar-element nk-sidebar-body">
+            <div class="nk-sidebar-content">
+              <div class="nk-sidebar-menu" data-simplebar="init">
+                <div class="simplebar-wrapper">
+                  <div class="simplebar-height-auto-observer-wrapper">
+                    <div class="simplebar-height-auto-observer"></div>
+                  </div>
+                  <div class="simplebar-mask">
+                    <div class="simplebar-offset">
+                      <div
+                        class="simplebar-content-wrapper"
+                        tabindex="0"
+                        role="region"
+                        aria-label="scrollable content">
+                        <div
+                          class="simplebar-content"
+                          style="padding: 40px 0px 24px">
+                          <!-- Sidebar user panel -->
+                          <!-- sidebar menu -->
+                          <ul class="nk-menu tree" data-widget="tree">
+                            <li class="nk-menu-item active current-page">
+                              <a
+                                class="nk-menu-link"
+                                href="index.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-dashboard"></em>
+                                </span>
+                                <span>Dashboard</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="users.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-user-alt"></em>
+                                </span>
+                                <span>Users</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-chart-down"></em>
+                                </span>
+                                <span>All Trades</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="live-trades.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Live Trades</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="demo-trades.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Demo Trades</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="fetch-update.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Fetch n Update</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="account-syncronize.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Accounts Syncronization</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-network"></em>
+                                </span>
+                                <span>Groups</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="all-groups.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Groups</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-thumb-alt"></em>
+                                </span>
+                                <span>Manage IB Requests</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-partners.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Partners</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-requests.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Requests</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-index-fill"></em>
+                                </span>
+                                <span>Manage Subadmins</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="subadmins.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Subadmins List</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="add-subadmin.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Add Subadmin</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="add-admin-role.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Add Admin Role</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="access-panels.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Access Panels</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="role-access.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Role Access</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-index-fill"></em>
+                                </span>
+                                <span>Manage Transactions</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="bfic-deposits.html"
+                                    data-original-title=""
+                                    title=""
+                                    >BFIC Deposits</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="fiat-deposits.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Deposits</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="withdraw.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Withdraw</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-commissions.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Commission</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="lot-wise.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Lot Wise Commission</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="meta-deposits.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Terminal Deposits</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="rest-ib-commission.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Pending Commissions</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-index-fill"></em>
+                                </span>
+                                <span>All Reports</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="deposit-bfic.html"
+                                    data-original-title=""
+                                    title=""
+                                    >BFIC Deposits Reports</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="fiat-deposit.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Deposit Reports</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="withdraw-report.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Withdrawals</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="internal-transfer.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Internal Transfer</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="live.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Live Accounts</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="demo.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Demo Accounts</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="wallet-report.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Wallet Transactions Report</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="kyc-submitted-users.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-file-docs"></em>
+                                </span>
+                                <span>KYC Requests</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-setting-alt"></em>
+                                </span>
+                                <span>Site Settings</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="company-banks.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Company Bank List</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="leverage-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Leverage Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="logo-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Logo Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="seo-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >SEO Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="currency-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Currency Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="account-types.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Account Type Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="account-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Account Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="agreement-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Agreement Settings</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-setting-alt"></em>
+                                </span>
+                                <span>Trade Symbol Settings</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="trades-categories.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Trades Categories</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="symbol-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Trades Symbols</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="tickets.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-ticket"></em>
+                                </span>
+                                <span>Tickets</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="general-settings.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-account-setting"></em>
+                                </span>
+                                <span>General Settings</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--nk-sidebar-->
+        <!-- sidebar @e -->
+        <!-- wrap @s -->
+        <div class="nk-wrap">
+          <!-- main header @s -->
+          <div class="nk-header nk-header-fixed is-light">
+            <div class="container-fluid">
+              <div class="nk-header-wrap">
+                <div class="nk-menu-trigger d-xl-none ml-n1">
+                  <a
+                    href="javascript:void(0)"
+                    class="nk-nav-toggle nk-quick-nav-icon"
+                    data-target="sidebarMenu">
+                    <em class="icon ni ni-menu"></em>
+                  </a>
+                </div>
+                <div class="nk-header-brand d-xl-none">
+                  <a href="javascript:void(0)" class="logo-link">
+                    <img
+                      class="logo-dark logo-img"
+                      src="assets/images/favicon.png"
+                      alt="logo-dark" />
+                  </a>
+                </div>
+                <!-- .nk-header-brand -->
+                <div class="nk-header-news d-none d-xl-block">
+                  <div class="nk-news-list">
+                    <a class="nk-news-item" href="javascript:void(0)">
+                      <div class="nk-news-icon">
+                        <em class="icon ni ni-happy"></em>
+                      </div>
+                      <div class="nk-news-text">
+                        <p>mike</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- .nk-header-news -->
+                <div class="nk-header-tools">
+                  <ul class="nk-quick-nav">
+                    <li class="dropdown notification-dropdown">
+                      <a
+                        href="javascript:void(0);"
+                        onclick="readNotification();"
+                        class="dropdown-toggle nk-quick-nav-icon"
+                        data-toggle="dropdown">
+                        <div class="" id="newNotiBell">
+                          <em class="icon ni ni-bell"></em>
+                        </div>
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+                        <div class="dropdown-head">
+                          <span class="sub-title nk-dropdown-title"
+                            >Notifications</span
+                          >
+                          <!-- <a href="#">Mark All as Read</a> -->
+                        </div>
+                        <div class="dropdown-body">
+                          <div class="nk-notification" id="notificationPanel">
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a withdraw request of 100 USD,
+                                    Please check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  27 Nov, 2024 6:28:08 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a new KYC request, Please
+                                    check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  27 Nov, 2024 6:08:01 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a new KYC request, Please
+                                    check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  27 Nov, 2024 6:06:59 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a withdraw request of 100 USD,
+                                    on address ...225452 Please check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  4 Jul, 2024 5:32:14 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a new KYC request, Please
+                                    check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  3 Jul, 2024 10:37:52 am
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- .nk-notification -->
+                        </div>
+                        <!-- .nk-dropdown-body -->
+                        <div class="dropdown-foot center">
+                          <a href="javascript:void(0)">View All</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="btn btn-md btn-light">
+                        Logout</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- .nk-header-tools -->
+              </div>
+              <!-- .nk-header-wrap -->
+            </div>
+            <!-- .container-fliud -->
+          </div>
+          <!-- content @s -->
+          <div class="nk-content">
+            <div class="container-fluid">
+              <div class="nk-content-inner">
+                <div class="nk-content-body">
+                  <div class="nk-block-head nk-block-head-sm">
+                    <div class="nk-block-between">
+                      <div class="nk-block-head-content">
+                        <h3 class="nk-block-title page-title">Live Accounts</h3>
+                      </div>
+                      <!-- nk-block-head-content -->
+                    </div>
+                    <!-- nk-block-between -->
+                  </div>
+                  <!-- nk-block-head -->
+                  <div class="nk-block">
+                    <div class="row g-gs">
+                      <div class="col-md-12">
+                        <div class="card card-bordered mb-3">
+                          <div class="card-inner-group">
+                            <div class="card-inner">
+                              <div class="">
+                                <div
+                                  id="example1_wrapper"
+                                  class="dataTables_wrapper form-inline dt-bootstrap">
+                                  <div
+                                    class="dataTables_length"
+                                    id="example1_length">
+                                    <label
+                                      >Show
+                                      <select
+                                        name="example1_length"
+                                        aria-controls="example1"
+                                        class="form-control input-sm">
+                                        <option value="10">10</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                        <option value="-1">All</option>
+                                      </select>
+                                      entries</label
+                                    >
+                                  </div>
+                                  <div class="dt-buttons">
+                                    <a
+                                      class="dt-button buttons-copy buttons-html5"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>Copy</span></a
+                                    ><a
+                                      class="dt-button buttons-csv buttons-html5"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>CSV</span></a
+                                    ><a
+                                      class="dt-button buttons-excel buttons-html5"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>Excel</span></a
+                                    ><a
+                                      class="dt-button buttons-pdf buttons-html5"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>PDF</span></a
+                                    ><a
+                                      class="dt-button buttons-print"
+                                      tabindex="0"
+                                      aria-controls="example1"
+                                      href="#"
+                                      ><span>Print</span></a
+                                    >
+                                  </div>
+                                  <div
+                                    id="example1_filter"
+                                    class="dataTables_filter">
+                                    <label
+                                      >Search:<input
+                                        type="search"
+                                        class="form-control input-sm"
+                                        placeholder=""
+                                        aria-controls="example1"
+                                    /></label>
+                                  </div>
+                                  <div class="table-responsive">
+                                    <table
+                                      id="example1"
+                                      class="w-100 table table-bordered table-striped dataTable table-sm admintb"
+                                      role="grid"
+                                      aria-describedby="example1_info"
+                                      style="width: 1056px">
+                                      <thead>
+                                        <tr role="row">
+                                          <th
+                                            style="width: 11px"
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1">
+                                            #
+                                          </th>
+                                          <th
+                                            style="width: 164px"
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Name
+                                          </th>
+                                          <th
+                                            style="width: 164px"
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Email
+                                          </th>
+                                          <th
+                                            style="width: 164px"
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Account
+                                          </th>
+                                          <th
+                                            style="width: 164px"
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Balance
+                                          </th>
+                                          <th
+                                            style="width: 159px"
+                                            class="sorting_disabled"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Created On
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr role="row" class="odd">
+                                          <td>1</td>
+                                          <td>g pt</td>
+                                          <td>t@yopmail.com</td>
+                                          <td>1172</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1172');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>27 Nov, 2024</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>2</td>
+                                          <td>g pt</td>
+                                          <td>t@yopmail.com</td>
+                                          <td>1170</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1170');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>27 Nov, 2024</td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>3</td>
+                                          <td>Level 1</td>
+                                          <td>level1@yopmail.com</td>
+                                          <td>1168</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1168');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>03 Sep, 2024</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>4</td>
+                                          <td>mike 02</td>
+                                          <td>mike02@mailinator.com</td>
+                                          <td>1166</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1166');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>22 Jul, 2024</td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>5</td>
+                                          <td>Vishal Gautam</td>
+                                          <td>vishal14@yopmail.com</td>
+                                          <td>1164</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1164');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>22 Jul, 2024</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>6</td>
+                                          <td>Level 1</td>
+                                          <td>level1@yopmail.com</td>
+                                          <td>1162</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1162');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>03 Jul, 2024</td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>7</td>
+                                          <td>Level 1</td>
+                                          <td>level1@yopmail.com</td>
+                                          <td>1160</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1160');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>03 Jul, 2024</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>8</td>
+                                          <td>Vishal Gautam</td>
+                                          <td>vishal14@yopmail.com</td>
+                                          <td>1158</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1158');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>25 Jun, 2024</td>
+                                        </tr>
+                                        <tr role="row" class="odd">
+                                          <td>9</td>
+                                          <td>Vishal Gautam</td>
+                                          <td>vishal14@yopmail.com</td>
+                                          <td>1156</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1156');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>25 Jun, 2024</td>
+                                        </tr>
+                                        <tr role="row" class="even">
+                                          <td>10</td>
+                                          <td>khali paji</td>
+                                          <td>khali@malinator.com</td>
+                                          <td>1154</td>
+                                          <td>
+                                            <a
+                                              href="javascript:void(0);"
+                                              onclick="getBalance('1154');"
+                                              class="eye"
+                                              ><i
+                                                class="ni ni-eye"
+                                                aria-hidden="true"></i
+                                            ></a>
+                                          </td>
+                                          <td>10 Jun, 2024</td>
+                                        </tr>
+                                      </tbody>
+                                      <tfoot>
+                                        <tr>
+                                          <th
+                                            style="width: 50px"
+                                            rowspan="1"
+                                            colspan="1">
+                                            #
+                                          </th>
+                                          <th
+                                            style="width: 200px"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Name
+                                          </th>
+                                          <th
+                                            style="width: 200px"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Email
+                                          </th>
+                                          <th
+                                            style="width: 200px"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Account
+                                          </th>
+                                          <th
+                                            style="width: 200px"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Balance
+                                          </th>
+                                          <th
+                                            style="width: 200px"
+                                            rowspan="1"
+                                            colspan="1">
+                                            Created On
+                                          </th>
+                                        </tr>
+                                      </tfoot>
+                                    </table>
+                                  </div>
+                                  <div
+                                    id="example1_processing"
+                                    class="dataTables_processing panel panel-default"
+                                    style="display: none">
+                                    Processing...
+                                  </div>
+                                  <div
+                                    class="dataTables_info"
+                                    id="example1_info"
+                                    role="status"
+                                    aria-live="polite">
+                                    Showing 1 to 10 of 24 entries (filtered from
+                                    25 total entries)
+                                  </div>
+                                  <div
+                                    class="dataTables_paginate paging_simple_numbers"
+                                    id="example1_paginate">
+                                    <ul class="pagination">
+                                      <li
+                                        class="paginate_button previous disabled"
+                                        id="example1_previous">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="0"
+                                          tabindex="0"
+                                          >Previous</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button active">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="1"
+                                          tabindex="0"
+                                          >1</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="2"
+                                          tabindex="0"
+                                          >2</a
+                                        >
+                                      </li>
+                                      <li class="paginate_button">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="3"
+                                          tabindex="0"
+                                          >3</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="paginate_button next"
+                                        id="example1_next">
+                                        <a
+                                          href="#"
+                                          aria-controls="example1"
+                                          data-dt-idx="4"
+                                          tabindex="0"
+                                          >Next</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <!--table-responsive-->
+                            </div>
+                            <!--card-inner-->
+                            <!--card-inner-->
+                          </div>
+                          <!--card-inner-group-->
+                        </div>
+                        <!--card-->
+                      </div>
+                      <!--col-md-12-->
+                    </div>
+                    <!--row g-gs-->
+                  </div>
+                  <!--nk-block-->
+                </div>
+                <!--nk-content-body-->
+              </div>
+              <!--nk-content-inner-->
+            </div>
+            <!--container-fluid-->
+          </div>
+          <!--nk-content-->
+          <!-- footer @s -->
+          <div class="nk-footer">
+            <div class="container-fluid">
+              <div class="nk-footer-wrap">
+                <div class="nk-footer-copyright">
+                  © 2025 Shark Traders. All Rights Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer @e -->
+        </div>
+        <!-- wrap @e -->
+      </div>
+      <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Bootstrap 4.1.3-->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="assets/images/favicon.png" />
+    <title>Dashboard | Shark Traders</title>
+    <!-- Bootstrap 4.1.3-->
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <!-- Bootstrap-extend -->
+    <link rel="stylesheet" href="assets/css/bootstrap-extend.css" />
+    <link rel="stylesheet" href="assets/css/dashlite.css" />
+    <!-- theme style -->
+    <link rel="stylesheet" href="assets/css/master_style.css" />
+    <!-- Custom style -->
+    <link rel="stylesheet" href="assets/css/custom.css" />
+  </head>
+  <!--dark-mode-->
+  <body
+    class="nk-body bg-lighter npc-general has-sidebar admin-body no-touch nk-nio-theme">
+    <div class="nk-app-root">
+      <!-- main @s -->
+      <div class="nk-main">
+        <!-- sidebar @s -->
+        <div
+          class="nk-sidebar nk-sidebar-fixed is-light"
+          data-content="sidebarMenu">
+          <div class="nk-sidebar-element nk-sidebar-head">
+            <div class="nk-sidebar-brand">
+              <a href="index.html" class="logo-link nk-sidebar-logo">
+                <img
+                  class="logo-dark logo-img"
+                  src="assets/images/logo.png"
+                  alt="logo-dark" />
+              </a>
+            </div>
+            <div class="nk-menu-trigger mr-n2">
+              <a
+                href="javascript:void(0)"
+                class="nk-nav-toggle nk-quick-nav-icon d-xl-none"
+                data-target="sidebarMenu">
+                <em class="icon ni ni-arrow-left"></em>
+              </a>
+            </div>
+          </div>
+          <!-- .nk-sidebar-element -->
+          <div class="nk-sidebar-element nk-sidebar-body">
+            <div class="nk-sidebar-content">
+              <div class="nk-sidebar-menu" data-simplebar="init">
+                <div class="simplebar-wrapper">
+                  <div class="simplebar-height-auto-observer-wrapper">
+                    <div class="simplebar-height-auto-observer"></div>
+                  </div>
+                  <div class="simplebar-mask">
+                    <div class="simplebar-offset">
+                      <div
+                        class="simplebar-content-wrapper"
+                        tabindex="0"
+                        role="region"
+                        aria-label="scrollable content">
+                        <div
+                          class="simplebar-content"
+                          style="padding: 40px 0px 24px">
+                          <!-- Sidebar user panel -->
+                          <!-- sidebar menu -->
+                          <ul class="nk-menu tree" data-widget="tree">
+                            <li class="nk-menu-item active current-page">
+                              <a
+                                class="nk-menu-link"
+                                href="index.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-dashboard"></em>
+                                </span>
+                                <span>Dashboard</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="users.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-user-alt"></em>
+                                </span>
+                                <span>Users</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-chart-down"></em>
+                                </span>
+                                <span>All Trades</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="live-trades.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Live Trades</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="demo-trades.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Demo Trades</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="fetch-update.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Fetch n Update</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="account-syncronize.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Accounts Syncronization</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-network"></em>
+                                </span>
+                                <span>Groups</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="all-groups.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Groups</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-thumb-alt"></em>
+                                </span>
+                                <span>Manage IB Requests</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-partners.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Partners</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-requests.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Requests</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-index-fill"></em>
+                                </span>
+                                <span>Manage Subadmins</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="subadmins.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Subadmins List</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="add-subadmin.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Add Subadmin</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="add-admin-role.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Add Admin Role</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="access-panels.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Access Panels</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="role-access.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Role Access</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-index-fill"></em>
+                                </span>
+                                <span>Manage Transactions</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="bfic-deposits.html"
+                                    data-original-title=""
+                                    title=""
+                                    >BFIC Deposits</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="fiat-deposits.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Deposits</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="withdraw.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Withdraw</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="ib-commissions.html"
+                                    data-original-title=""
+                                    title=""
+                                    >IB Commission</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="lot-wise.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Lot Wise Commission</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="meta-deposits.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Terminal Deposits</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="rest-ib-commission.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Pending Commissions</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-list-index-fill"></em>
+                                </span>
+                                <span>All Reports</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="deposit-bfic.html"
+                                    data-original-title=""
+                                    title=""
+                                    >BFIC Deposits Reports</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="fiat-deposit.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Deposit Reports</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="withdraw-report.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Withdrawals</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="internal-transfer.html"
+                                    data-original-title=""
+                                    title=""
+                                    >All Internal Transfer</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="live.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Live Accounts</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="demo.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Demo Accounts</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="wallet-report.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Wallet Transactions Report</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="kyc-submitted-users.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-file-docs"></em>
+                                </span>
+                                <span>KYC Requests</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-setting-alt"></em>
+                                </span>
+                                <span>Site Settings</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="company-banks.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Company Bank List</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="leverage-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Leverage Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="logo-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Logo Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="seo-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >SEO Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="currency-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Currency Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="account-types.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Account Type Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="account-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Account Settings</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="agreement-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Agreement Settings</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item has-sub treeview">
+                              <a
+                                class="nk-menu-link nk-menu-toggle"
+                                href="javascript:void(0)"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-setting-alt"></em>
+                                </span>
+                                <span>Trade Symbol Settings</span>
+                                <span class="pull-right-container">
+                                  <i class="fa fa-angle-right pull-right"></i>
+                                </span>
+                              </a>
+                              <ul class="nk-menu-sub">
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="trades-categories.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Trades Categories</a
+                                  >
+                                </li>
+                                <li class="nk-menu-item">
+                                  <a
+                                    class="nk-menu-link"
+                                    href="symbol-settings.html"
+                                    data-original-title=""
+                                    title=""
+                                    >Trades Symbols</a
+                                  >
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="tickets.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-ticket"></em>
+                                </span>
+                                <span>Tickets</span>
+                              </a>
+                            </li>
+                            <li class="nk-menu-item">
+                              <a
+                                class="nk-menu-link"
+                                href="general-settings.html"
+                                data-original-title=""
+                                title="">
+                                <span class="nk-menu-icon">
+                                  <em class="icon ni ni-account-setting"></em>
+                                </span>
+                                <span>General Settings</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--nk-sidebar-->
+        <!-- sidebar @e -->
+        <!-- wrap @s -->
+        <div class="nk-wrap">
+          <!-- main header @s -->
+          <div class="nk-header nk-header-fixed is-light">
+            <div class="container-fluid">
+              <div class="nk-header-wrap">
+                <div class="nk-menu-trigger d-xl-none ml-n1">
+                  <a
+                    href="javascript:void(0)"
+                    class="nk-nav-toggle nk-quick-nav-icon"
+                    data-target="sidebarMenu">
+                    <em class="icon ni ni-menu"></em>
+                  </a>
+                </div>
+                <div class="nk-header-brand d-xl-none">
+                  <a href="index.html" class="logo-link">
+                    <img
+                      class="logo-dark logo-img"
+                      src="assets/images/favicon.png"
+                      alt="logo-dark" />
+                  </a>
+                </div>
+                <!-- .nk-header-brand -->
+                <div class="nk-header-news d-none d-xl-block">
+                  <div class="nk-news-list">
+                    <a class="nk-news-item" href="javascript:void(0)">
+                      <div class="nk-news-icon">
+                        <em class="icon ni ni-happy"></em>
+                      </div>
+                      <div class="nk-news-text">
+                        <p>mike</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <!-- .nk-header-news -->
+                <div class="nk-header-tools">
+                  <ul class="nk-quick-nav">
+                    <li class="dropdown notification-dropdown">
+                      <a
+                        href="javascript:void(0);"
+                        onclick="readNotification();"
+                        class="dropdown-toggle nk-quick-nav-icon"
+                        data-toggle="dropdown">
+                        <div class="" id="newNotiBell">
+                          <em class="icon ni ni-bell"></em>
+                        </div>
+                      </a>
+                      <div
+                        class="dropdown-menu dropdown-menu-xl dropdown-menu-right">
+                        <div class="dropdown-head">
+                          <span class="sub-title nk-dropdown-title"
+                            >Notifications</span
+                          >
+                          <!-- <a href="#">Mark All as Read</a> -->
+                        </div>
+                        <div class="dropdown-body">
+                          <div class="nk-notification" id="notificationPanel">
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a withdraw request of 100 USD,
+                                    Please check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  27 Nov, 2024 6:28:08 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a new KYC request, Please
+                                    check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  27 Nov, 2024 6:08:01 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a new KYC request, Please
+                                    check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  27 Nov, 2024 6:06:59 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a withdraw request of 100 USD,
+                                    on address ...225452 Please check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  4 Jul, 2024 5:32:14 am
+                                </div>
+                              </div>
+                            </div>
+                            <div class="nk-notification-item dropdown-inner">
+                              <div class="nk-notification-icon">
+                                <em
+                                  class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                              </div>
+                              <div class="nk-notification-content">
+                                <div class="nk-notification-text">
+                                  <a href="javascript:void(0)"
+                                    >You've got a new KYC request, Please
+                                    check!</a
+                                  >
+                                </div>
+                                <div class="nk-notification-time">
+                                  3 Jul, 2024 10:37:52 am
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- .nk-notification -->
+                        </div>
+                        <!-- .nk-dropdown-body -->
+                        <div class="dropdown-foot center">
+                          <a href="javascript:void(0)">View All</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0)" class="btn btn-md btn-light">
+                        Logout</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- .nk-header-tools -->
+              </div>
+              <!-- .nk-header-wrap -->
+            </div>
+            <!-- .container-fliud -->
+          </div>
+          <!-- content @s -->
+          <div class="nk-content">
+            <div class="container-fluid">
+              <div class="nk-content-inner">
+                <div class="nk-content-body">
+                  <div class="nk-block-head nk-block-head-sm">
+                    <div class="nk-block-between">
+                      <div class="nk-block-head-content">
+                        <h3 class="nk-block-title page-title">Edit User</h3>
+                      </div>
+                      <!-- nk-block-head-content -->
+                    </div>
+                    <!-- nk-block-between -->
+                  </div>
+                  <!--nk-block-head-->
+                  <div class="nk-block edituser-block">
+                    <div class="row g-gs">
+                      <div class="col-md-12">
+                        <div class="card card-bordered">
+                          <div class="card-inner-group">
+                            <div
+                              class="card-inner position-relative card-tools-toggle pb-3 pt-3">
+                              <div class="card-title-group">
+                                <div class="card-title">
+                                  <h6 class="title">
+                                    <span class="">SahiRef refuser</span>
+                                  </h6>
+                                </div>
+                                <!--card-title-->
+                              </div>
+                              <!--card-title-group-->
+                            </div>
+                            <!--card-inner-->
+                            <div class="card-inner">
+                              <form
+                                action="https://crm.sharktechnologies.net/admin/edit-user/MjI="
+                                class="form-element"
+                                name="userForm"
+                                id="userForm"
+                                method="post"
+                                accept-charset="utf-8">
+                                <div class="row">
+                                  <div class="col-md-4">
+                                    <div class="form-group">
+                                      <label for="fname" class="form-label"
+                                        >First Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="fname"
+                                        id="fname"
+                                        placeholder="Enter First Name"
+                                        value="SahiRef" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="form-group">
+                                      <label
+                                        for="middle_name"
+                                        class="form-label"
+                                        >Middle Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="middle_name"
+                                        id="middle_name"
+                                        placeholder="Enter Middle Name"
+                                        value="qwerty" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-4">
+                                    <div class="form-group">
+                                      <label for="fname" class="form-label"
+                                        >Last Name</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="lname"
+                                        id="lname"
+                                        placeholder="Enter Last Name"
+                                        value="refuser" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="email" class="form-label"
+                                        >Email</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Enter Email"
+                                        readonly=""
+                                        value="str@yopmail.com" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label
+                                        for="country_code"
+                                        class="form-label"
+                                        >Phone Code</label
+                                      >
+                                      <div class="form-control-select">
+                                        <select
+                                          class="form-control"
+                                          name="country_code"
+                                          id="country_code">
+                                          <option value="">Select One</option>
+                                          <option value="AF">
+                                            (+ 93) Afghanistan
+                                          </option>
+                                          <option value="AL">
+                                            (+ 355) Albania
+                                          </option>
+                                          <option value="DZ">
+                                            (+ 213) Algeria
+                                          </option>
+                                          <option value="AS">
+                                            (+ 1684) American Samoa
+                                          </option>
+                                          <option value="AD">
+                                            (+ 376) Andorra
+                                          </option>
+                                          <option value="AO">
+                                            (+ 244) Angola
+                                          </option>
+                                          <option value="AI">
+                                            (+ 1264) Anguilla
+                                          </option>
+                                          <option value="AQ">
+                                            (+ 0) Antarctica
+                                          </option>
+                                          <option value="AG">
+                                            (+ 1268) Antigua And Barbuda
+                                          </option>
+                                          <option value="AR">
+                                            (+ 54) Argentina
+                                          </option>
+                                          <option value="AM">
+                                            (+ 374) Armenia
+                                          </option>
+                                          <option value="AW">
+                                            (+ 297) Aruba
+                                          </option>
+                                          <option value="AU">
+                                            (+ 61) Australia
+                                          </option>
+                                          <option value="AT">
+                                            (+ 43) Austria
+                                          </option>
+                                          <option value="AZ">
+                                            (+ 994) Azerbaijan
+                                          </option>
+                                          <option value="BS">
+                                            (+ 1242) Bahamas The
+                                          </option>
+                                          <option value="BH">
+                                            (+ 973) Bahrain
+                                          </option>
+                                          <option value="BD">
+                                            (+ 880) Bangladesh
+                                          </option>
+                                          <option value="BB">
+                                            (+ 1246) Barbados
+                                          </option>
+                                          <option value="BY">
+                                            (+ 375) Belarus
+                                          </option>
+                                          <option value="BE">
+                                            (+ 32) Belgium
+                                          </option>
+                                          <option value="BZ">
+                                            (+ 501) Belize
+                                          </option>
+                                          <option value="BJ">
+                                            (+ 229) Benin
+                                          </option>
+                                          <option value="BM">
+                                            (+ 1441) Bermuda
+                                          </option>
+                                          <option value="BT">
+                                            (+ 975) Bhutan
+                                          </option>
+                                          <option value="BO">
+                                            (+ 591) Bolivia
+                                          </option>
+                                          <option value="BA">
+                                            (+ 387) Bosnia and Herzegovina
+                                          </option>
+                                          <option value="BW">
+                                            (+ 267) Botswana
+                                          </option>
+                                          <option value="BV">
+                                            (+ 0) Bouvet Island
+                                          </option>
+                                          <option value="BR">
+                                            (+ 55) Brazil
+                                          </option>
+                                          <option value="IO">
+                                            (+ 246) British Indian Ocean
+                                            Territory
+                                          </option>
+                                          <option value="BN">
+                                            (+ 673) Brunei
+                                          </option>
+                                          <option value="BG">
+                                            (+ 359) Bulgaria
+                                          </option>
+                                          <option value="BF">
+                                            (+ 226) Burkina Faso
+                                          </option>
+                                          <option value="BI">
+                                            (+ 257) Burundi
+                                          </option>
+                                          <option value="KH">
+                                            (+ 855) Cambodia
+                                          </option>
+                                          <option value="CM">
+                                            (+ 237) Cameroon
+                                          </option>
+                                          <option value="CA">
+                                            (+ 1) Canada
+                                          </option>
+                                          <option value="CV">
+                                            (+ 238) Cape Verde
+                                          </option>
+                                          <option value="KY">
+                                            (+ 1345) Cayman Islands
+                                          </option>
+                                          <option value="CF">
+                                            (+ 236) Central African Republic
+                                          </option>
+                                          <option value="TD">
+                                            (+ 235) Chad
+                                          </option>
+                                          <option value="CL">
+                                            (+ 56) Chile
+                                          </option>
+                                          <option value="CN">
+                                            (+ 86) China
+                                          </option>
+                                          <option value="CX">
+                                            (+ 61) Christmas Island
+                                          </option>
+                                          <option value="CC">
+                                            (+ 672) Cocos (Keeling) Islands
+                                          </option>
+                                          <option value="CO">
+                                            (+ 57) Colombia
+                                          </option>
+                                          <option value="KM">
+                                            (+ 269) Comoros
+                                          </option>
+                                          <option value="CG">
+                                            (+ 242) Republic Of The Congo
+                                          </option>
+                                          <option value="CD">
+                                            (+ 242) Democratic Republic Of The
+                                            Congo
+                                          </option>
+                                          <option value="CK">
+                                            (+ 682) Cook Islands
+                                          </option>
+                                          <option value="CR">
+                                            (+ 506) Costa Rica
+                                          </option>
+                                          <option value="CI">
+                                            (+ 225) Cote D'Ivoire (Ivory Coast)
+                                          </option>
+                                          <option value="HR">
+                                            (+ 385) Croatia (Hrvatska)
+                                          </option>
+                                          <option value="CU">
+                                            (+ 53) Cuba
+                                          </option>
+                                          <option value="CY">
+                                            (+ 357) Cyprus
+                                          </option>
+                                          <option value="CZ">
+                                            (+ 420) Czech Republic
+                                          </option>
+                                          <option value="DK">
+                                            (+ 45) Denmark
+                                          </option>
+                                          <option value="DJ">
+                                            (+ 253) Djibouti
+                                          </option>
+                                          <option value="DM">
+                                            (+ 1767) Dominica
+                                          </option>
+                                          <option value="DO">
+                                            (+ 1809) Dominican Republic
+                                          </option>
+                                          <option value="TP">
+                                            (+ 670) East Timor
+                                          </option>
+                                          <option value="EC">
+                                            (+ 593) Ecuador
+                                          </option>
+                                          <option value="EG">
+                                            (+ 20) Egypt
+                                          </option>
+                                          <option value="SV">
+                                            (+ 503) El Salvador
+                                          </option>
+                                          <option value="GQ">
+                                            (+ 240) Equatorial Guinea
+                                          </option>
+                                          <option value="ER">
+                                            (+ 291) Eritrea
+                                          </option>
+                                          <option value="EE">
+                                            (+ 372) Estonia
+                                          </option>
+                                          <option value="ET">
+                                            (+ 251) Ethiopia
+                                          </option>
+                                          <option value="XA">
+                                            (+ 61) External Territories of
+                                            Australia
+                                          </option>
+                                          <option value="FK">
+                                            (+ 500) Falkland Islands
+                                          </option>
+                                          <option value="FO">
+                                            (+ 298) Faroe Islands
+                                          </option>
+                                          <option value="FJ">
+                                            (+ 679) Fiji Islands
+                                          </option>
+                                          <option value="FI">
+                                            (+ 358) Finland
+                                          </option>
+                                          <option value="FR">
+                                            (+ 33) France
+                                          </option>
+                                          <option value="GF">
+                                            (+ 594) French Guiana
+                                          </option>
+                                          <option value="PF">
+                                            (+ 689) French Polynesia
+                                          </option>
+                                          <option value="TF">
+                                            (+ 0) French Southern Territories
+                                          </option>
+                                          <option value="GA">
+                                            (+ 241) Gabon
+                                          </option>
+                                          <option value="GM">
+                                            (+ 220) Gambia The
+                                          </option>
+                                          <option value="GE">
+                                            (+ 995) Georgia
+                                          </option>
+                                          <option value="DE">
+                                            (+ 49) Germany
+                                          </option>
+                                          <option value="GH">
+                                            (+ 233) Ghana
+                                          </option>
+                                          <option value="GI">
+                                            (+ 350) Gibraltar
+                                          </option>
+                                          <option value="GR">
+                                            (+ 30) Greece
+                                          </option>
+                                          <option value="GL">
+                                            (+ 299) Greenland
+                                          </option>
+                                          <option value="GD">
+                                            (+ 1473) Grenada
+                                          </option>
+                                          <option value="GP">
+                                            (+ 590) Guadeloupe
+                                          </option>
+                                          <option value="GU">
+                                            (+ 1671) Guam
+                                          </option>
+                                          <option value="GT">
+                                            (+ 502) Guatemala
+                                          </option>
+                                          <option value="XU">
+                                            (+ 44) Guernsey and Alderney
+                                          </option>
+                                          <option value="GN">
+                                            (+ 224) Guinea
+                                          </option>
+                                          <option value="GW">
+                                            (+ 245) Guinea-Bissau
+                                          </option>
+                                          <option value="GY">
+                                            (+ 592) Guyana
+                                          </option>
+                                          <option value="HT">
+                                            (+ 509) Haiti
+                                          </option>
+                                          <option value="HM">
+                                            (+ 0) Heard and McDonald Islands
+                                          </option>
+                                          <option value="HN">
+                                            (+ 504) Honduras
+                                          </option>
+                                          <option value="HK">
+                                            (+ 852) Hong Kong S.A.R.
+                                          </option>
+                                          <option value="HU">
+                                            (+ 36) Hungary
+                                          </option>
+                                          <option value="IS">
+                                            (+ 354) Iceland
+                                          </option>
+                                          <option value="IN">
+                                            (+ 91) India
+                                          </option>
+                                          <option value="ID">
+                                            (+ 62) Indonesia
+                                          </option>
+                                          <option value="IR">
+                                            (+ 98) Iran
+                                          </option>
+                                          <option value="IQ">
+                                            (+ 964) Iraq
+                                          </option>
+                                          <option value="IE">
+                                            (+ 353) Ireland
+                                          </option>
+                                          <option value="IL">
+                                            (+ 972) Israel
+                                          </option>
+                                          <option value="IT">
+                                            (+ 39) Italy
+                                          </option>
+                                          <option value="JM">
+                                            (+ 1876) Jamaica
+                                          </option>
+                                          <option value="JP">
+                                            (+ 81) Japan
+                                          </option>
+                                          <option value="XJ">
+                                            (+ 44) Jersey
+                                          </option>
+                                          <option value="JO">
+                                            (+ 962) Jordan
+                                          </option>
+                                          <option value="KZ">
+                                            (+ 7) Kazakhstan
+                                          </option>
+                                          <option value="KE">
+                                            (+ 254) Kenya
+                                          </option>
+                                          <option value="KI">
+                                            (+ 686) Kiribati
+                                          </option>
+                                          <option value="KP">
+                                            (+ 850) Korea North
+                                          </option>
+                                          <option value="KR">
+                                            (+ 82) Korea South
+                                          </option>
+                                          <option value="KW">
+                                            (+ 965) Kuwait
+                                          </option>
+                                          <option value="KG">
+                                            (+ 996) Kyrgyzstan
+                                          </option>
+                                          <option value="LA">
+                                            (+ 856) Laos
+                                          </option>
+                                          <option value="LV">
+                                            (+ 371) Latvia
+                                          </option>
+                                          <option value="LB">
+                                            (+ 961) Lebanon
+                                          </option>
+                                          <option value="LS">
+                                            (+ 266) Lesotho
+                                          </option>
+                                          <option value="LR">
+                                            (+ 231) Liberia
+                                          </option>
+                                          <option value="LY">
+                                            (+ 218) Libya
+                                          </option>
+                                          <option value="LI">
+                                            (+ 423) Liechtenstein
+                                          </option>
+                                          <option value="LT">
+                                            (+ 370) Lithuania
+                                          </option>
+                                          <option value="LU">
+                                            (+ 352) Luxembourg
+                                          </option>
+                                          <option value="MO">
+                                            (+ 853) Macau S.A.R.
+                                          </option>
+                                          <option value="MK">
+                                            (+ 389) Macedonia
+                                          </option>
+                                          <option value="MG">
+                                            (+ 261) Madagascar
+                                          </option>
+                                          <option value="MW">
+                                            (+ 265) Malawi
+                                          </option>
+                                          <option value="MY">
+                                            (+ 60) Malaysia
+                                          </option>
+                                          <option value="MV">
+                                            (+ 960) Maldives
+                                          </option>
+                                          <option value="ML">
+                                            (+ 223) Mali
+                                          </option>
+                                          <option value="MT">
+                                            (+ 356) Malta
+                                          </option>
+                                          <option value="XM">
+                                            (+ 44) Man (Isle of)
+                                          </option>
+                                          <option value="MH">
+                                            (+ 692) Marshall Islands
+                                          </option>
+                                          <option value="MQ">
+                                            (+ 596) Martinique
+                                          </option>
+                                          <option value="MR">
+                                            (+ 222) Mauritania
+                                          </option>
+                                          <option value="MU">
+                                            (+ 230) Mauritius
+                                          </option>
+                                          <option value="YT">
+                                            (+ 269) Mayotte
+                                          </option>
+                                          <option value="MX">
+                                            (+ 52) Mexico
+                                          </option>
+                                          <option value="FM">
+                                            (+ 691) Micronesia
+                                          </option>
+                                          <option value="MD">
+                                            (+ 373) Moldova
+                                          </option>
+                                          <option value="MC">
+                                            (+ 377) Monaco
+                                          </option>
+                                          <option value="MN">
+                                            (+ 976) Mongolia
+                                          </option>
+                                          <option value="MS">
+                                            (+ 1664) Montserrat
+                                          </option>
+                                          <option value="MA">
+                                            (+ 212) Morocco
+                                          </option>
+                                          <option value="MZ">
+                                            (+ 258) Mozambique
+                                          </option>
+                                          <option value="MM">
+                                            (+ 95) Myanmar
+                                          </option>
+                                          <option value="NA">
+                                            (+ 264) Namibia
+                                          </option>
+                                          <option value="NR">
+                                            (+ 674) Nauru
+                                          </option>
+                                          <option value="NP">
+                                            (+ 977) Nepal
+                                          </option>
+                                          <option value="AN">
+                                            (+ 599) Netherlands Antilles
+                                          </option>
+                                          <option value="NL">
+                                            (+ 31) Netherlands The
+                                          </option>
+                                          <option value="NC">
+                                            (+ 687) New Caledonia
+                                          </option>
+                                          <option value="NZ">
+                                            (+ 64) New Zealand
+                                          </option>
+                                          <option value="NI">
+                                            (+ 505) Nicaragua
+                                          </option>
+                                          <option value="NE">
+                                            (+ 227) Niger
+                                          </option>
+                                          <option value="NG">
+                                            (+ 234) Nigeria
+                                          </option>
+                                          <option value="NU">
+                                            (+ 683) Niue
+                                          </option>
+                                          <option value="NF">
+                                            (+ 672) Norfolk Island
+                                          </option>
+                                          <option value="MP">
+                                            (+ 1670) Northern Mariana Islands
+                                          </option>
+                                          <option value="NO">
+                                            (+ 47) Norway
+                                          </option>
+                                          <option value="OM">
+                                            (+ 968) Oman
+                                          </option>
+                                          <option value="PK">
+                                            (+ 92) Pakistan
+                                          </option>
+                                          <option value="PW">
+                                            (+ 680) Palau
+                                          </option>
+                                          <option value="PS">
+                                            (+ 970) Palestinian Territory
+                                            Occupied
+                                          </option>
+                                          <option value="PA">
+                                            (+ 507) Panama
+                                          </option>
+                                          <option value="PG">
+                                            (+ 675) Papua new Guinea
+                                          </option>
+                                          <option value="PY">
+                                            (+ 595) Paraguay
+                                          </option>
+                                          <option value="PE">
+                                            (+ 51) Peru
+                                          </option>
+                                          <option value="PH">
+                                            (+ 63) Philippines
+                                          </option>
+                                          <option value="PN">
+                                            (+ 0) Pitcairn Island
+                                          </option>
+                                          <option value="PL">
+                                            (+ 48) Poland
+                                          </option>
+                                          <option value="PT">
+                                            (+ 351) Portugal
+                                          </option>
+                                          <option value="PR">
+                                            (+ 1787) Puerto Rico
+                                          </option>
+                                          <option value="QA">
+                                            (+ 974) Qatar
+                                          </option>
+                                          <option value="RE">
+                                            (+ 262) Reunion
+                                          </option>
+                                          <option value="RO">
+                                            (+ 40) Romania
+                                          </option>
+                                          <option value="RU">
+                                            (+ 70) Russia
+                                          </option>
+                                          <option value="RW">
+                                            (+ 250) Rwanda
+                                          </option>
+                                          <option value="SH">
+                                            (+ 290) Saint Helena
+                                          </option>
+                                          <option value="KN">
+                                            (+ 1869) Saint Kitts And Nevis
+                                          </option>
+                                          <option value="LC">
+                                            (+ 1758) Saint Lucia
+                                          </option>
+                                          <option value="PM">
+                                            (+ 508) Saint Pierre and Miquelon
+                                          </option>
+                                          <option value="VC">
+                                            (+ 1784) Saint Vincent And The
+                                            Grenadines
+                                          </option>
+                                          <option value="WS">
+                                            (+ 684) Samoa
+                                          </option>
+                                          <option value="SM">
+                                            (+ 378) San Marino
+                                          </option>
+                                          <option value="ST">
+                                            (+ 239) Sao Tome and Principe
+                                          </option>
+                                          <option value="SA">
+                                            (+ 966) Saudi Arabia
+                                          </option>
+                                          <option value="SN">
+                                            (+ 221) Senegal
+                                          </option>
+                                          <option value="RS">
+                                            (+ 381) Serbia
+                                          </option>
+                                          <option value="SC">
+                                            (+ 248) Seychelles
+                                          </option>
+                                          <option value="SL">
+                                            (+ 232) Sierra Leone
+                                          </option>
+                                          <option value="SG">
+                                            (+ 65) Singapore
+                                          </option>
+                                          <option value="SK">
+                                            (+ 421) Slovakia
+                                          </option>
+                                          <option value="SI">
+                                            (+ 386) Slovenia
+                                          </option>
+                                          <option value="XG">
+                                            (+ 44) Smaller Territories of the UK
+                                          </option>
+                                          <option value="SB">
+                                            (+ 677) Solomon Islands
+                                          </option>
+                                          <option value="SO">
+                                            (+ 252) Somalia
+                                          </option>
+                                          <option value="ZA">
+                                            (+ 27) South Africa
+                                          </option>
+                                          <option value="GS">
+                                            (+ 0) South Georgia
+                                          </option>
+                                          <option value="SS">
+                                            (+ 211) South Sudan
+                                          </option>
+                                          <option value="ES">
+                                            (+ 34) Spain
+                                          </option>
+                                          <option value="LK">
+                                            (+ 94) Sri Lanka
+                                          </option>
+                                          <option value="SD">
+                                            (+ 249) Sudan
+                                          </option>
+                                          <option value="SR">
+                                            (+ 597) Suriname
+                                          </option>
+                                          <option value="SJ">
+                                            (+ 47) Svalbard And Jan Mayen
+                                            Islands
+                                          </option>
+                                          <option value="SZ">
+                                            (+ 268) Swaziland
+                                          </option>
+                                          <option value="SE">
+                                            (+ 46) Sweden
+                                          </option>
+                                          <option value="CH">
+                                            (+ 41) Switzerland
+                                          </option>
+                                          <option value="SY">
+                                            (+ 963) Syria
+                                          </option>
+                                          <option value="TW">
+                                            (+ 886) Taiwan
+                                          </option>
+                                          <option value="TJ">
+                                            (+ 992) Tajikistan
+                                          </option>
+                                          <option value="TZ">
+                                            (+ 255) Tanzania
+                                          </option>
+                                          <option value="TH">
+                                            (+ 66) Thailand
+                                          </option>
+                                          <option value="TG">
+                                            (+ 228) Togo
+                                          </option>
+                                          <option value="TK">
+                                            (+ 690) Tokelau
+                                          </option>
+                                          <option value="TO">
+                                            (+ 676) Tonga
+                                          </option>
+                                          <option value="TT">
+                                            (+ 1868) Trinidad And Tobago
+                                          </option>
+                                          <option value="TN">
+                                            (+ 216) Tunisia
+                                          </option>
+                                          <option value="TR">
+                                            (+ 90) Turkey
+                                          </option>
+                                          <option value="TM">
+                                            (+ 7370) Turkmenistan
+                                          </option>
+                                          <option value="TC">
+                                            (+ 1649) Turks And Caicos Islands
+                                          </option>
+                                          <option value="TV">
+                                            (+ 688) Tuvalu
+                                          </option>
+                                          <option value="UG">
+                                            (+ 256) Uganda
+                                          </option>
+                                          <option value="UA">
+                                            (+ 380) Ukraine
+                                          </option>
+                                          <option value="AE">
+                                            (+ 971) United Arab Emirates
+                                          </option>
+                                          <option value="GB">
+                                            (+ 44) United Kingdom
+                                          </option>
+                                          <option value="US">
+                                            (+ 1) United States
+                                          </option>
+                                          <option value="UM">
+                                            (+ 1) United States Minor Outlying
+                                            Islands
+                                          </option>
+                                          <option value="UY">
+                                            (+ 598) Uruguay
+                                          </option>
+                                          <option value="UZ">
+                                            (+ 998) Uzbekistan
+                                          </option>
+                                          <option value="VU">
+                                            (+ 678) Vanuatu
+                                          </option>
+                                          <option value="VA">
+                                            (+ 39) Vatican City State (Holy See)
+                                          </option>
+                                          <option value="VE">
+                                            (+ 58) Venezuela
+                                          </option>
+                                          <option value="VN">
+                                            (+ 84) Vietnam
+                                          </option>
+                                          <option value="VG">
+                                            (+ 1284) Virgin Islands (British)
+                                          </option>
+                                          <option value="VI">
+                                            (+ 1340) Virgin Islands (US)
+                                          </option>
+                                          <option value="WF">
+                                            (+ 681) Wallis And Futuna Islands
+                                          </option>
+                                          <option value="EH">
+                                            (+ 212) Western Sahara
+                                          </option>
+                                          <option value="YE">
+                                            (+ 967) Yemen
+                                          </option>
+                                          <option value="YU">
+                                            (+ 38) Yugoslavia
+                                          </option>
+                                          <option value="ZM">
+                                            (+ 260) Zambia
+                                          </option>
+                                          <option value="ZW">
+                                            (+ 263) Zimbabwe
+                                          </option>
+                                        </select>
+                                      </div>
+                                      <!--form-control-select-->
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-4">
+                                    <div class="form-group">
+                                      <label for="phone" class="form-label"
+                                        >Phone</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="phone"
+                                        id="phone"
+                                        placeholder="Enter Phone"
+                                        value="4567876543" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="address" class="form-label"
+                                        >Address</label
+                                      >
+                                      <textarea
+                                        class="form-control"
+                                        rows="3"
+                                        placeholder="Enter Address"
+                                        name="address"
+                                        id="address"></textarea>
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="city" class="form-label"
+                                        >City</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="city"
+                                        id="city"
+                                        placeholder="Enter City"
+                                        value="" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="country" class="form-label"
+                                        >Country</label
+                                      >
+                                      <div class="form-control-select">
+                                        <select
+                                          class="form-control"
+                                          name="country"
+                                          id="country">
+                                          <option value="">Select One</option>
+                                          <option value="AF">
+                                            Afghanistan
+                                          </option>
+                                          <option value="AL">Albania</option>
+                                          <option value="DZ">Algeria</option>
+                                          <option value="AS">
+                                            American Samoa
+                                          </option>
+                                          <option value="AD">Andorra</option>
+                                          <option value="AO">Angola</option>
+                                          <option value="AI">Anguilla</option>
+                                          <option value="AQ">Antarctica</option>
+                                          <option value="AG">
+                                            Antigua And Barbuda
+                                          </option>
+                                          <option value="AR">Argentina</option>
+                                          <option value="AM">Armenia</option>
+                                          <option value="AW">Aruba</option>
+                                          <option value="AU">Australia</option>
+                                          <option value="AT">Austria</option>
+                                          <option value="AZ">Azerbaijan</option>
+                                          <option value="BS">
+                                            Bahamas The
+                                          </option>
+                                          <option value="BH">Bahrain</option>
+                                          <option value="BD">Bangladesh</option>
+                                          <option value="BB">Barbados</option>
+                                          <option value="BY">Belarus</option>
+                                          <option value="BE">Belgium</option>
+                                          <option value="BZ">Belize</option>
+                                          <option value="BJ">Benin</option>
+                                          <option value="BM">Bermuda</option>
+                                          <option value="BT">Bhutan</option>
+                                          <option value="BO">Bolivia</option>
+                                          <option value="BA">
+                                            Bosnia and Herzegovina
+                                          </option>
+                                          <option value="BW">Botswana</option>
+                                          <option value="BV">
+                                            Bouvet Island
+                                          </option>
+                                          <option value="BR">Brazil</option>
+                                          <option value="IO">
+                                            British Indian Ocean Territory
+                                          </option>
+                                          <option value="BN">Brunei</option>
+                                          <option value="BG">Bulgaria</option>
+                                          <option value="BF">
+                                            Burkina Faso
+                                          </option>
+                                          <option value="BI">Burundi</option>
+                                          <option value="KH">Cambodia</option>
+                                          <option value="CM">Cameroon</option>
+                                          <option value="CA">Canada</option>
+                                          <option value="CV">Cape Verde</option>
+                                          <option value="KY">
+                                            Cayman Islands
+                                          </option>
+                                          <option value="CF">
+                                            Central African Republic
+                                          </option>
+                                          <option value="TD">Chad</option>
+                                          <option value="CL">Chile</option>
+                                          <option value="CN">China</option>
+                                          <option value="CX">
+                                            Christmas Island
+                                          </option>
+                                          <option value="CC">
+                                            Cocos (Keeling) Islands
+                                          </option>
+                                          <option value="CO">Colombia</option>
+                                          <option value="KM">Comoros</option>
+                                          <option value="CG">
+                                            Republic Of The Congo
+                                          </option>
+                                          <option value="CD">
+                                            Democratic Republic Of The Congo
+                                          </option>
+                                          <option value="CK">
+                                            Cook Islands
+                                          </option>
+                                          <option value="CR">Costa Rica</option>
+                                          <option value="CI">
+                                            Cote D'Ivoire (Ivory Coast)
+                                          </option>
+                                          <option value="HR">
+                                            Croatia (Hrvatska)
+                                          </option>
+                                          <option value="CU">Cuba</option>
+                                          <option value="CY">Cyprus</option>
+                                          <option value="CZ">
+                                            Czech Republic
+                                          </option>
+                                          <option value="DK">Denmark</option>
+                                          <option value="DJ">Djibouti</option>
+                                          <option value="DM">Dominica</option>
+                                          <option value="DO">
+                                            Dominican Republic
+                                          </option>
+                                          <option value="TP">East Timor</option>
+                                          <option value="EC">Ecuador</option>
+                                          <option value="EG">Egypt</option>
+                                          <option value="SV">
+                                            El Salvador
+                                          </option>
+                                          <option value="GQ">
+                                            Equatorial Guinea
+                                          </option>
+                                          <option value="ER">Eritrea</option>
+                                          <option value="EE">Estonia</option>
+                                          <option value="ET">Ethiopia</option>
+                                          <option value="XA">
+                                            External Territories of Australia
+                                          </option>
+                                          <option value="FK">
+                                            Falkland Islands
+                                          </option>
+                                          <option value="FO">
+                                            Faroe Islands
+                                          </option>
+                                          <option value="FJ">
+                                            Fiji Islands
+                                          </option>
+                                          <option value="FI">Finland</option>
+                                          <option value="FR">France</option>
+                                          <option value="GF">
+                                            French Guiana
+                                          </option>
+                                          <option value="PF">
+                                            French Polynesia
+                                          </option>
+                                          <option value="TF">
+                                            French Southern Territories
+                                          </option>
+                                          <option value="GA">Gabon</option>
+                                          <option value="GM">Gambia The</option>
+                                          <option value="GE">Georgia</option>
+                                          <option value="DE">Germany</option>
+                                          <option value="GH">Ghana</option>
+                                          <option value="GI">Gibraltar</option>
+                                          <option value="GR">Greece</option>
+                                          <option value="GL">Greenland</option>
+                                          <option value="GD">Grenada</option>
+                                          <option value="GP">Guadeloupe</option>
+                                          <option value="GU">Guam</option>
+                                          <option value="GT">Guatemala</option>
+                                          <option value="XU">
+                                            Guernsey and Alderney
+                                          </option>
+                                          <option value="GN">Guinea</option>
+                                          <option value="GW">
+                                            Guinea-Bissau
+                                          </option>
+                                          <option value="GY">Guyana</option>
+                                          <option value="HT">Haiti</option>
+                                          <option value="HM">
+                                            Heard and McDonald Islands
+                                          </option>
+                                          <option value="HN">Honduras</option>
+                                          <option value="HK">
+                                            Hong Kong S.A.R.
+                                          </option>
+                                          <option value="HU">Hungary</option>
+                                          <option value="IS">Iceland</option>
+                                          <option value="IN">India</option>
+                                          <option value="ID">Indonesia</option>
+                                          <option value="IR">Iran</option>
+                                          <option value="IQ">Iraq</option>
+                                          <option value="IE">Ireland</option>
+                                          <option value="IL">Israel</option>
+                                          <option value="IT">Italy</option>
+                                          <option value="JM">Jamaica</option>
+                                          <option value="JP">Japan</option>
+                                          <option value="XJ">Jersey</option>
+                                          <option value="JO">Jordan</option>
+                                          <option value="KZ">Kazakhstan</option>
+                                          <option value="KE">Kenya</option>
+                                          <option value="KI">Kiribati</option>
+                                          <option value="KP">
+                                            Korea North
+                                          </option>
+                                          <option value="KR">
+                                            Korea South
+                                          </option>
+                                          <option value="KW">Kuwait</option>
+                                          <option value="KG">Kyrgyzstan</option>
+                                          <option value="LA">Laos</option>
+                                          <option value="LV">Latvia</option>
+                                          <option value="LB">Lebanon</option>
+                                          <option value="LS">Lesotho</option>
+                                          <option value="LR">Liberia</option>
+                                          <option value="LY">Libya</option>
+                                          <option value="LI">
+                                            Liechtenstein
+                                          </option>
+                                          <option value="LT">Lithuania</option>
+                                          <option value="LU">Luxembourg</option>
+                                          <option value="MO">
+                                            Macau S.A.R.
+                                          </option>
+                                          <option value="MK">Macedonia</option>
+                                          <option value="MG">Madagascar</option>
+                                          <option value="MW">Malawi</option>
+                                          <option value="MY">Malaysia</option>
+                                          <option value="MV">Maldives</option>
+                                          <option value="ML">Mali</option>
+                                          <option value="MT">Malta</option>
+                                          <option value="XM">
+                                            Man (Isle of)
+                                          </option>
+                                          <option value="MH">
+                                            Marshall Islands
+                                          </option>
+                                          <option value="MQ">Martinique</option>
+                                          <option value="MR">Mauritania</option>
+                                          <option value="MU">Mauritius</option>
+                                          <option value="YT">Mayotte</option>
+                                          <option value="MX">Mexico</option>
+                                          <option value="FM">Micronesia</option>
+                                          <option value="MD">Moldova</option>
+                                          <option value="MC">Monaco</option>
+                                          <option value="MN">Mongolia</option>
+                                          <option value="MS">Montserrat</option>
+                                          <option value="MA">Morocco</option>
+                                          <option value="MZ">Mozambique</option>
+                                          <option value="MM">Myanmar</option>
+                                          <option value="NA">Namibia</option>
+                                          <option value="NR">Nauru</option>
+                                          <option value="NP">Nepal</option>
+                                          <option value="AN">
+                                            Netherlands Antilles
+                                          </option>
+                                          <option value="NL">
+                                            Netherlands The
+                                          </option>
+                                          <option value="NC">
+                                            New Caledonia
+                                          </option>
+                                          <option value="NZ">
+                                            New Zealand
+                                          </option>
+                                          <option value="NI">Nicaragua</option>
+                                          <option value="NE">Niger</option>
+                                          <option value="NG">Nigeria</option>
+                                          <option value="NU">Niue</option>
+                                          <option value="NF">
+                                            Norfolk Island
+                                          </option>
+                                          <option value="MP">
+                                            Northern Mariana Islands
+                                          </option>
+                                          <option value="NO">Norway</option>
+                                          <option value="OM">Oman</option>
+                                          <option value="PK">Pakistan</option>
+                                          <option value="PW">Palau</option>
+                                          <option value="PS">
+                                            Palestinian Territory Occupied
+                                          </option>
+                                          <option value="PA">Panama</option>
+                                          <option value="PG">
+                                            Papua new Guinea
+                                          </option>
+                                          <option value="PY">Paraguay</option>
+                                          <option value="PE">Peru</option>
+                                          <option value="PH">
+                                            Philippines
+                                          </option>
+                                          <option value="PN">
+                                            Pitcairn Island
+                                          </option>
+                                          <option value="PL">Poland</option>
+                                          <option value="PT">Portugal</option>
+                                          <option value="PR">
+                                            Puerto Rico
+                                          </option>
+                                          <option value="QA">Qatar</option>
+                                          <option value="RE">Reunion</option>
+                                          <option value="RO">Romania</option>
+                                          <option value="RU">Russia</option>
+                                          <option value="RW">Rwanda</option>
+                                          <option value="SH">
+                                            Saint Helena
+                                          </option>
+                                          <option value="KN">
+                                            Saint Kitts And Nevis
+                                          </option>
+                                          <option value="LC">
+                                            Saint Lucia
+                                          </option>
+                                          <option value="PM">
+                                            Saint Pierre and Miquelon
+                                          </option>
+                                          <option value="VC">
+                                            Saint Vincent And The Grenadines
+                                          </option>
+                                          <option value="WS">Samoa</option>
+                                          <option value="SM">San Marino</option>
+                                          <option value="ST">
+                                            Sao Tome and Principe
+                                          </option>
+                                          <option value="SA">
+                                            Saudi Arabia
+                                          </option>
+                                          <option value="SN">Senegal</option>
+                                          <option value="RS">Serbia</option>
+                                          <option value="SC">Seychelles</option>
+                                          <option value="SL">
+                                            Sierra Leone
+                                          </option>
+                                          <option value="SG">Singapore</option>
+                                          <option value="SK">Slovakia</option>
+                                          <option value="SI">Slovenia</option>
+                                          <option value="XG">
+                                            Smaller Territories of the UK
+                                          </option>
+                                          <option value="SB">
+                                            Solomon Islands
+                                          </option>
+                                          <option value="SO">Somalia</option>
+                                          <option value="ZA">
+                                            South Africa
+                                          </option>
+                                          <option value="GS">
+                                            South Georgia
+                                          </option>
+                                          <option value="SS">
+                                            South Sudan
+                                          </option>
+                                          <option value="ES">Spain</option>
+                                          <option value="LK">Sri Lanka</option>
+                                          <option value="SD">Sudan</option>
+                                          <option value="SR">Suriname</option>
+                                          <option value="SJ">
+                                            Svalbard And Jan Mayen Islands
+                                          </option>
+                                          <option value="SZ">Swaziland</option>
+                                          <option value="SE">Sweden</option>
+                                          <option value="CH">
+                                            Switzerland
+                                          </option>
+                                          <option value="SY">Syria</option>
+                                          <option value="TW">Taiwan</option>
+                                          <option value="TJ">Tajikistan</option>
+                                          <option value="TZ">Tanzania</option>
+                                          <option value="TH">Thailand</option>
+                                          <option value="TG">Togo</option>
+                                          <option value="TK">Tokelau</option>
+                                          <option value="TO">Tonga</option>
+                                          <option value="TT">
+                                            Trinidad And Tobago
+                                          </option>
+                                          <option value="TN">Tunisia</option>
+                                          <option value="TR">Turkey</option>
+                                          <option value="TM">
+                                            Turkmenistan
+                                          </option>
+                                          <option value="TC">
+                                            Turks And Caicos Islands
+                                          </option>
+                                          <option value="TV">Tuvalu</option>
+                                          <option value="UG">Uganda</option>
+                                          <option value="UA">Ukraine</option>
+                                          <option value="AE">
+                                            United Arab Emirates
+                                          </option>
+                                          <option value="GB">
+                                            United Kingdom
+                                          </option>
+                                          <option value="US">
+                                            United States
+                                          </option>
+                                          <option value="UM">
+                                            United States Minor Outlying Islands
+                                          </option>
+                                          <option value="UY">Uruguay</option>
+                                          <option value="UZ">Uzbekistan</option>
+                                          <option value="VU">Vanuatu</option>
+                                          <option value="VA">
+                                            Vatican City State (Holy See)
+                                          </option>
+                                          <option value="VE">Venezuela</option>
+                                          <option value="VN">Vietnam</option>
+                                          <option value="VG">
+                                            Virgin Islands (British)
+                                          </option>
+                                          <option value="VI">
+                                            Virgin Islands (US)
+                                          </option>
+                                          <option value="WF">
+                                            Wallis And Futuna Islands
+                                          </option>
+                                          <option value="EH">
+                                            Western Sahara
+                                          </option>
+                                          <option value="YE">Yemen</option>
+                                          <option value="YU">Yugoslavia</option>
+                                          <option value="ZM">Zambia</option>
+                                          <option value="ZW">Zimbabwe</option>
+                                        </select>
+                                      </div>
+                                      <!--form-control-select-->
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="account" class="form-label"
+                                        >Account</label
+                                      >
+                                      <div class="form-control-select">
+                                        <select
+                                          class="form-control"
+                                          name="account"
+                                          id="account">
+                                          <option value="0" selected="">
+                                            Micro
+                                          </option>
+                                          <option value="1">Standard</option>
+                                        </select>
+                                        <span class="err"></span>
+                                      </div>
+                                      <!--form-control-select-->
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- <div class="row">
+                                <div class="col-md-6">
+          
+                                  <div class="form-group">
+                                    <label for="lead_group" class="form-label">Lead Group</label>
+                                    <div class="form-control-select">
+                                      <select class="form-control" name="lead_group" id="lead_group">
+                                                                          <option value="1" >traders</option>
+                                                                          <option value="2" >demos</option>
+                                                                    </select>
+                                    </div>
+                                    <span class="err"></span>
+                                  </div>
+          
+                                </div>
+          
+                                <div class="col-md-6">
+          
+                                  <div class="form-group">
+                                    <label for="lead_status" class="form-label">Lead Status</label>
+                                    <div class="form-control-select">
+                                      <select class="form-control" name="lead_status" id="lead_status">
+                                                                    </select>
+                                    </div>
+                                    <span class="err"></span>
+                                  </div>
+          
+                                </div>
+          
+                              </div> -->
+
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="password" class="form-label"
+                                        >Password</label
+                                      >
+                                      <input
+                                        type="password"
+                                        class="form-control"
+                                        name="password"
+                                        id="password"
+                                        placeholder="Enter Password"
+                                        value="" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label
+                                        for="conf_password"
+                                        class="form-label"
+                                        >Confirm Password</label
+                                      >
+                                      <input
+                                        type="password"
+                                        class="form-control"
+                                        name="conf_password"
+                                        id="conf_password"
+                                        placeholder="Enter Confirm Password"
+                                        value="" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="balance" class="form-label"
+                                        >Balance</label
+                                      >
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        name="balance"
+                                        id="balance"
+                                        placeholder="Update Wallet Balance (USD)"
+                                        value="23,000.00" />
+                                      <span class="err"></span>
+                                    </div>
+                                  </div>
+
+                                  <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label for="editable" class="form-label"
+                                        >User Is Editable</label
+                                      >
+                                      <div class="form-control-select">
+                                        <select
+                                          class="form-control"
+                                          name="is_editable"
+                                          id="is_editable">
+                                          <option value="1">Enable</option>
+                                          <option value="0" selected="">
+                                            Disable
+                                          </option>
+                                        </select>
+                                        <span class="err"></span>
+                                      </div>
+                                      <!--form-control-select-->
+                                    </div>
+                                  </div>
+                                </div>
+                                <button type="submit" class="btn btn-success">
+                                  Save
+                                </button>
+                              </form>
+                            </div>
+                            <!--card-inner-->
+                          </div>
+                          <!--card-inner-group-->
+                        </div>
+                        <!--card card-bordered-->
+                      </div>
+                      <!--col-md-12-->
+                    </div>
+                    <!--row g-gs-->
+                  </div>
+                  <!--nk-block-->
+                </div>
+                <!--nk-content-body-->
+              </div>
+              <!--nk-content-inner-->
+            </div>
+            <!--container-fluid-->
+          </div>
+          <!--nk-content-->
+          <!-- footer @s -->
+          <div class="nk-footer">
+            <div class="container-fluid">
+              <div class="nk-footer-wrap">
+                <div class="nk-footer-copyright">
+                  © 2025 Shark Traders. All Rights Reserved.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- footer @e -->
+        </div>
+        <!-- wrap @e -->
+      </div>
+      <!-- main @e -->
+    </div>
+    <!-- app-root @e -->
+    <script src="assets/js/jquery.js"></script>
+    <!-- Bootstrap 4.1.3-->
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
